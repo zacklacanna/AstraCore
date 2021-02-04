@@ -1,0 +1,36 @@
+name: AstraMain
+version: 1.0.0
+author: BoyJamal
+main: me.BoyJamal.astaria.Main
+depend: [TokenEnchant,Vault,LuckPerms,ShopGUIPlus,ArmorEquipEvent,SilkSpawners]
+commands:
+  kits:
+    usage: /<command>
+    default: true
+    aliases: [kit,ekit,ekits]
+  tokenshop:
+    usage: /<command>
+    default: true
+  anvil:
+    usage: /<command>
+    default: op
+  upgrade:
+    usage: /<command>
+    default: true
+    aliases: [upgradegui]
+  customitem:
+    usage: /<command>
+    default: op
+    aliases: [customitems,giveitem]
+  enchanter:
+    usage: /<command>
+    default: true
+    aliases: [enchant,eenchant,ce]
+  blocks:
+    usage: /<command>
+    default: op
+    aliases: [block,condense]
+  smelt:
+    usage: /<command>
+    default: op
+    aliases: [furnace]

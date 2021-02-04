@@ -1,0 +1,79 @@
+guis:
+  tokenshop:
+    name: "&r        &f&lTokenShop"
+    slots: 36
+    items:
+      0:
+        itemID: 278
+        itemData: 0
+        name: "&e&lDiamond Pickaxe"
+        placeholder: false
+        glow: true
+        cost: 10
+        lore:
+        - '&7&oPurchase a diamond pickaxe!'
+        - '&e&nCost: 10 Tokens'
+        actions:
+        - 'give %player% 278 1'
+  kits:
+    name: "&r          &f&lKits"
+    slots: 36
+    items:
+      0:
+        hasPerm:
+          itemID: 278
+          itemData: 0
+          name: "&e&lRefugee Kit"
+          lore:
+          - '&7&oKit for Comet Rank!'
+          - '&7&oLeft click to preview'
+          - '&7&oRight click to redeem'
+          glow: true
+        noPerm:
+          itemID: 278
+          itemData: 0
+          name: "&e&lRefugee Kit &7&o(No Permission)"
+          lore:
+          - '&7&oKit for Refugee Rank!'
+          - '&7&oLeft click to preview'
+          - '&7&oRight click to redeem'
+          glow: true
+        placeholder: false
+        permission: "astrapvp.kit.refugee"
+        rightClick:
+        - 'console:give %player% 278 1'
+        - 'console:eco give %player% 100'
+        - 'console:closeInventory'
+        leftClick:
+        - 'console:closeInventory'
+        - 'player:kitpreview Comet'
+        - 'console:eco give %player% 100'
+      1:
+        noPerm:
+          itemID: 278
+          itemData: 0
+          name: "&e&lComit Kit &7&o(No Permission)"
+          lore:
+          - '&7&oKit for Comet Rank!'
+          - '&7&oLeft click to preview'
+          - '&7&oRight click to redeem'
+          glow: true
+        hasPerm:
+          itemID: 278
+          itemData: 0
+          name: "&e&lComit Kit"
+          lore:
+          - '&7&oKit for Comet Rank!'
+          - '&7&oLeft click to preview'
+          - '&7&oRight click to redeem'
+          glow: true
+        placeholder: false
+        permission: "astrapvp.kit.comet"
+        rightClick:
+        - 'console:give %player% 278 1'
+        - 'console:eco give %player% 100'
+        - 'console:closeInventory'
+        leftClick:
+        - 'console:closeInventory'
+        - 'player:kitpreview Comet'
+        - 'console:eco give %player% 100'
